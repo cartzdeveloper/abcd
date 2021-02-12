@@ -309,29 +309,6 @@
 	    color: #ef5350 !important;
 	    caret-color: #ef5350 !important;
 	   }
-
-img {
-	border-radius: 100% !important;
-    border: 3px solid Invisible;
-    animation: float 5s ease-in-out infinite;
-}
-@keyframes float {
-  5% {
-    box-shadow: 0 5px 18px 0px rgba(0, 0, 0, 0.6);
-    -webkit-transform: translatey(0px);
-            transform: translatey(0px);
-  }
-  5% {
-    box-shadow: 0 25px 18px 0px rgba(0, 0, 0, 0.2);
-    -webkit-transform: translatey(-30px);
-            transform: translatey(-30px);
-  }
-  5% {
-    box-shadow: 0 5px 18px 0px rgba(0, 0, 0, 0.6);
-    -webkit-transform: translatey(0px);
-            transform: translatey(0px);
-  }
-}
 	   .v-application .error.darken-1 {
 	    background-color: #e53935 !important;
 	    border-color: #e53935 !important;
@@ -924,6 +901,28 @@ img {
 	    color: #18222d !important;
 	    caret-color: #18222d !important;
 	   }
+img {
+	border-radius: 100% !important;
+    border: 3px solid Invisible;
+    animation: float 5s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 18px 0px rgba(0, 0, 0, 0.6);
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  30% {
+    box-shadow: 0 25px 18px 0px rgba(0, 0, 0, 0.2);
+    -webkit-transform: translatey(-30px);
+            transform: translatey(-30px);
+  }
+  60% {
+    box-shadow: 0 5px 18px 0px rgba(0, 0, 0, 0.6);
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
 	</style>
 	<script data-cb-site="Yourbotname" data-n-head="ssr" src="https://js.chargebee.com/v2/chargebee.js" type="98d62332cbfa1888ca43b342-text/javascript">
 	</script>
@@ -965,8 +964,9 @@ img {
 			<div class="v-application v-application--is-ltr theme--dark" data-app="true" id="app">
 				<div class="v-application--wrap">
 					<link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
-					<header class="v-sheet v-sheet--tile theme--dark v-toolbar v-toolbar--absolute v-toolbar--flat v-app-bar" style="height:64px;margin-top:0px;transform:translateY(0px);left:0px;right:0px;background-color:#20ff01;border-color:#20ff01;">
-						<div class="v-toolbar__content" style="height:64px;">
+<header class="v-sheet v-sheet--tile theme--dark v-toolbar v-toolbar--absolute v-toolbar--flat v-app-bar" style="height:64px;margin-top:0px;transform:translateY(0px);left:0px;right:0px;background-color:Invisible;border-color: Invisible;">
+
+						<div class="v-toolbar__content" style="height:60px;">
 							<a href="/" style="margin:none;">
 							<div class="v-responsive v-image mx-2" style="max-height:40px;max-width:40px;border-radius:50%;">
 								<div class="v-image__image v-image__image--preload v-image__image--contain" style="background-image:;background-position:center center;"></div>
