@@ -309,6 +309,29 @@
 	    color: #ef5350 !important;
 	    caret-color: #ef5350 !important;
 	   }
+
+img {
+	border-radius: 100% !important;
+    border: 3px solid Invisible;
+    animation: float 5s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 18px 0px rgba(0, 0, 0, 0.6);
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 18px 0px rgba(0, 0, 0, 0.2);
+    -webkit-transform: translatey(-30px);
+            transform: translatey(-30px);
+  }
+  100% {
+    box-shadow: 0 5px 18px 0px rgba(0, 0, 0, 0.6);
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
 	   .v-application .error.darken-1 {
 	    background-color: #e53935 !important;
 	    border-color: #e53935 !important;
@@ -950,6 +973,7 @@
 								<div class="v-responsive__content"></div>
 							</div></a> <a class="v-btn v-btn--contained v-btn--rounded v-btn--router theme--dark v-size--default" href="https://discord.com/oauth2/authorize?client_id=797290814543364098&permissions=8&scope=bot" target="_blank">
 								<span class="v-btn__content">Adicionar</span></a> <a class="v-btn v-btn--contained v-btn--rounded v-btn--router theme--dark v-size--default" href="https://discord.gg/eqNYFyuXyA" target="_blank"><span class="v-btn__content">Suporte</span></a>
+                                <a class="v-btn v-btn--contained v-btn--rounded v-btn--router theme--dark v-size--default" href="https://top.gg/bot/744314135352836096/vote" target="_blank"><span class="v-btn__content">Votar</span></a>
 								
 							
 
