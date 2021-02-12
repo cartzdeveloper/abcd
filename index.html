@@ -901,6 +901,30 @@
 	    color: #18222d !important;
 	    caret-color: #18222d !important;
 	   }
+
+img {
+margin-top: 20px;
+	border-radius: 50% !important;
+    border: 3px solid Invisible;
+    animation: float 10s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 18px 0px rgba(0, 0, 0, 0.6);
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 18px 0px rgba(0, 0, 0, 0.2);
+    -webkit-transform: translatey(-30px);
+            transform: translatey(-30px);
+  }
+100% {
+    box-shadow: 0 5px 18px 0px rgba(0, 0, 0, 0.6);
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
 	</style>
 	<script data-cb-site="Yourbotname" data-n-head="ssr" src="https://js.chargebee.com/v2/chargebee.js" type="98d62332cbfa1888ca43b342-text/javascript">
 	</script>
