@@ -1,85 +1,79 @@
 <style>
-$count: 10;
-$time: 2; //in seconds
-$size: 100;
-$color: #ffffff;
-
-.holder {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  bottom: 0px;
-  right: 0px;
-  width: 100%;
-  height: 100%;
-  background-color: #2D2F48;
-}
-
-.preloader {
-  /* size */
-  width: $size + px;
-  height: $size + px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  animation: rotatePreloader $time + s infinite ease-in;
-}
-@keyframes rotatePreloader {
-  0% {
-  transform: translateX(-50%) translateY(-50%) rotateZ(0deg);
-  }
-  100% {
-  transform: translateX(-50%) translateY(-50%) rotateZ(-360deg);
-  }
-}
-.preloader div {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-}
-.preloader div:before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 0%;
-  width: 10%;
-  height: 10%;
-  background-color: $color;
-  transform: translateX(-50%);
-  border-radius: 50%;
-}
-
-@for $i from 1 through $count {
-  .preloader div:nth-child(#{$i}) {
-    transform: rotateZ(((360 / $count) * ($i - 1)) + deg);
-    animation: rotateCircle + $i $time + s infinite linear;
-    z-index: $count - $i;
-  }
-  @keyframes rotateCircle#{$i} {
-    #{percentage(((50 / $count) * ($i - 1)) / 100)} {
-      opacity: 0;
+    body {
+      background-color: #222;
     }
-    #{percentage((((50 / $count) + 0.0001) * ($i - 1)) / 100)} {
-      opacity: 1;
-      transform: rotateZ((0 - ((360 / $count) * ($i - 2))) + deg);
+    #preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
-    #{percentage((((50 / $count) * ($i - 0)) + 2) / 100)} {
-      transform: rotateZ((0 - ((360 / $count) * ($i - 1))) + deg);
+    #loader {
+        display: block;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        width: 150px;
+        height: 150px;
+        margin: -75px 0 0 -75px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #74db70;
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
     }
-    #{percentage(((50 + ((50 / $count) * ($i - 0))) + 2) / 100)} {
-      transform: rotateZ((0 - ((360 / $count) * ($i - 1))) + deg);
+    #loader:before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #72d355;
+        -webkit-animation: spin 3s linear infinite;
+        animation: spin 3s linear infinite;
     }
-    100% {
-      transform: rotateZ((0 - ((360 / $count) * ($count - 1))) + deg);
-      opacity: 1;
+    #loader:after {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #15ff00;
+        -webkit-animation: spin 1.5s linear infinite;
+        animation: spin 1.5s linear infinite;
     }
-  }
-}
-</style>
-
-<div class="holder">
-  <div class="preloader"><div>
-</div>
-    <meta http-equiv="refresh" content="5; url=../inicio/" />
+    @-webkit-keyframes spin {
+        0%   {
+            -webkit-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes spin {
+        0%   {
+            -webkit-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }</style>
+    <div id="preloader">
+      <div id="loader"></div>
+    </div>
+        <meta http-equiv="refresh" content="5; url=../inicio/" />
