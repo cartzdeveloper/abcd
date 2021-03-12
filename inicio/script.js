@@ -54,7 +54,7 @@ var channelData = [{
 	name: '💾・comandos',
 	messages: [{
 		type: 'input',
-		text: 'K!BotInfo',
+		text: 'K!Config',
 		user: users.phineas
 	}, {
 		type: 'message',
