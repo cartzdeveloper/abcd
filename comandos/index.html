@@ -1,115 +1,149 @@
+
 <!DOCTYPE html>
-<html lang="pt" >
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Killua - Comandos</title>
-  <link rel="shortcut icon" href="https://cdn.discordapp.com/avatars/744314135352836096/592027db681f3f5c0df9196588aca2da.png?size=4096" type="image/x-icon">
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+    <title>Killua™
+    </title>
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<div id="header">
-  <div class="logo"></div>
-  <div id="header">
-  <div class="logo"></div>
-  <div class="header">
-    <div class="header-right">
-      <a  href="../inicio/"><i class="fas fa-home"></i> Inicio</a>
-      <a class="active" href="../comandos/"><i class="fas fa-terminal"></i> Comandos</a>
-      <a href="https://discord.com/invite/WrkVZayFss" target="_blank"><i class="fas fa-headset"></i>Suporte</a>
-    </div>
-  </div>
-</div>
-</div>
-<div id="demo">
-  <div class="title">Lista de comandos<br>
-  </div>
+    <header>
+        <a href="../inicio/" target="_blank"><img src="https://cdn.discordapp.com/avatars/744314135352836096/592027db681f3f5c0df9196588aca2da.png?size=4096"></a>
+        <ul>
+            <li><a href="https://discord.com/oauth2/authorize?client_id=744314135352836096&permissions=8&scope=bot" target="_blank">Adicionar</a></li>
+            <li><a href="../inicio/" target="_blank">Inicio</a></li>
+        </ul>
+    </header>
+<style>
 
-
-  <div class="invite-now-wrapper">
-<a href="https://discord.com/oauth2/authorize?client_id=744314135352836096&permissions=8&scope=bot" target="_blank" class="invite-now"> <i class="fab fa-discord"></i> Adicionar</a>
-</div>
-
-<div class="container">
-
-  <div id="accordion">
-    <div class="card">
-      <div class="card-header">
-        <a class="collapsed card-link" data-toggle="collapse" href="#collapseOne">
-          <i class="fas fa-grin-tears"></i> • Diversão
-        </a>
+</style>
+</head>
+<body>
+    <main>
+<h1>Lista de comandos</h1>
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    /* The grid: Three equal columns that floats next to each other */
+    .column {
+        border-radius: 70px;
+      float: left;
+      width: 33.33%;
+      padding: 50px;
+      text-align: center;
+      font-size: 25px;
+      cursor: pointer;
+      color: white;
+    }
+    
+    .containerTab {
+      padding: 20px;
+      color: white;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Closable button inside the container tab */
+    .closebtn {
+      float: right;
+      color: white;
+      font-size: 35px;
+      cursor: pointer;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <div style="text-align:center">
+    </div>
+    
+    <!-- Three columns -->
+    <div class="row">
+      <div class="column" onclick="openTab('b1');" style="background:rgb(107, 107, 107);">
+        Diversão
       </div>
-      <div id="collapseOne" class="collapse" data-parent="#accordion">
-        <div class="card-body">
-          ╰ <b>K!Pikachu</b> - Gera uma imagen aleátoria do <b>pikachu</b>.
-          <br>╰ <b>K!Wasted</b> - Gera uma imagen de prisão do <b>GTA V</b>.
-          <br>╰ <b>K!Triggered</b> - Provoque o usuário <b>mencionado/autor</b>.
-        </div>
+      <div class="column" onclick="openTab('b2');" style="background:rgb(107, 107, 107);">
+        Configurações
+      </div>
+      <div class="column" onclick="openTab('b3');" style="background:rgb(107, 107, 107);">
+        Informações
+      </div>
+      <div class="column" onclick="openTab('b4');" style="background:rgb(107, 107, 107);">
+        Administração
       </div>
     </div>
-    <div class="card">
-      <div class="card-header">
-        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-          <i class="fas fa-cogs"></i>  • Configurações
-      </a>
-      </div>
-      <div id="collapseTwo" class="collapse" data-parent="#accordion">
-        <div class="card-body">
-          ╰ <b>K!Config</b> - Faça alterações nas <b>configurações</b> do meu sistemas em seu servidor.
-        </div>
-      </div>
+    
+    <!-- Full-width columns: (hidden by default) -->
+    <div id="b1" class="containerTab" style="display:none;">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <h3>K!Pikachu - Gera uma imagen aleátoria de um pikachu.<br>
+        K!Wasted - Gera uma imagen de prisão do GTA V.<br>
+        K!Triggered - Provoque o usuário mencionado/autor.</h3>
     </div>
-    <div class="card">
-      <div class="card-header">
-        <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
-          <i class="fas fa-info-circle"></i> • Informações
-      </a>
-      </div>
-      <div id="collapseFour" class="collapse" data-parent="#accordion">
-        <div class="card-body">
-
-          ╰ <b>K!Avatar</b> - Pegar avatar do usuário usando ID ou Menção.
-          <br>╰ <b>K!BotInfo</b> - Veja minhas informações.
-          <br>╰ <b>K!ChannelInfo</b> - Veja informações de um canal de texto/voz usando o <b>ID</b> ou <b>Menção</b>.
-          <br>╰ <b>K!Convite</b> - Link de convite para me adicionar em seu servidor.
-          <br>╰ <b>K!Ping</b> - Mostra a <b>Latência da API</b> do Discord e a da <b>Maquina de Hospedagem</b>.
-          <br>╰ <b>K!Serverinfo</b> - Pega informações do servidor onde o comando foi executado.
-          <br>╰ <b>K!UserInfo</b> - Pega informações do usuário usando ID ou Menção.
-          <br>╰ <b>K!Stats</b> - Veja informações basicas sobre min.
-          <br>╰ <b>K!Warns</b> - Veja se você ou o usuário menciona tem avisos.
-        </div>
-      </div>
+    
+    <div id="b2" class="containerTab" style="display:none;">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <h3>K!Config - Faça alterações nas configurações do meu sistemas em seu servidor.</h3>
     </div>
-    <div class="card">
-      <div class="card-header">
-        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-          <i class="fas fa-user-shield"></i>  • Administração
-        </a>
-      </div>
-      <div id="collapseThree" class="collapse" data-parent="#accordion">
-        <div class="card-body">
-          ╰ <b>K!Clear</b> - Limpe mensagens do canal onde o comando foi executado com o limite de 100 mensagens.
-          <br>╰ <b>K!Lock</b> - Trave o canal onde o comando foi executado.
-          <br>╰ <b>K!Unlock</b> - Destravar o canal onde o comando foi executado.
-          <br>╰ <b>K!Ban</b> - Efetuar uma punição no usuário mencionado.
-          <br>╰ <b>K!Unban</b> - Desbanir um usuário por ID.
-          <br>╰ <b>K!Kick</b> - Expulsar o usuário mencionado.
-          <br>╰ <b>K!Remove-warn</b> - Remover avisos de um usuário.
-          <br>╰ <b>K!Warn</b> - De uma aviso no usuário mencionado, se receber <b>3</b> aviso será banido permanentemente.
-        </div>
-      </div>
+    
+    <div id="b3" class="containerTab" style="display:none;">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+<h3>K!Avatar - Pegar avatar do usuário usando ID ou Menção.
+    K!BotInfo - Veja as minhas informações.<br>
+    K!ChannelInfo - Veja informações de um canal de texto/voz usando o ID ou Menção.<br>
+    K!Help - Veja a lista de comandos e todas as categorias existentes.<br>
+    K!Convite - Link de convite para me adicionar em seu servidor.<br>
+    K!Ping - Mostra a Latência da API do Discord e a da Maquina de Hospedagem.<br>
+    K!Stats - Veja informações basicas sobre min.<br>
+    K!UserInfo - Pega informações do usuário usando ID ou Menção.<br>
+    K!ServerInfo - Pega informações do servidor onde o comando foi executado.<br>
+    K!Warns - Veja se você ou o usuário menciona tem avisos.<br></h3>
     </div>
-  </div>
-          </div>
-        </div>
+    <div id="b4" class="containerTab" style="display:none;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <h3>K!Clear - Limpe mensagens do canal onde o comando foi executado com o limite de 100 mensagens.<br>
+            K!Lock - Travar o canal onde o comando foi executado.<br>
+            K!Unlock - Destravar o canal onde o comando foi executado.<br>
+            K!Ban - Efetuar uma punição no usuário mencionado.<br>
+            K!Unban - Desbanir um usuário por ID.<br>
+            K!Kick - Expulsar o usuário mencionado.<br>
+            K!Warn - De uma aviso no usuário mencionado, se receber 3 aviso será banido permanentemente.<br>
+            K!Remove-warn - Remover avisos de um usuário.<br>
+            K!Mute - Mute o usuário mencionado/ID.<br>
+            K!Unmute - Desmute um usuário mutado utilizando a menção/ID do usuário.<br></h3>
       </div>
-    </div>
-  </div>
-</div>
+    <script>
+    function openTab(tabName) {
+      var i, x;
+      x = document.getElementsByClassName("containerTab");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      document.getElementById(tabName).style.display = "block";
+    }
+    </script>
+       <br><br><br>
+    </main>
+    <footer>
+        <p>&copy Killua™. Todos os Direitos Reservados.</p>
+    </footer>
+</body>
+</html>
 </body>
 </html>
