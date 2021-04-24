@@ -1,0 +1,1721 @@
+body {
+    font-family: 'Poppins', sans-serif !important;
+    background-color: #2C2F33;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    border-top: 6px #43eb22 solid !important;
+    font-size: 16px;
+}
+
+.nav-link {
+     font-size: 18px !important;
+     background: transparent !important;
+     font-family: Lato, sans-serif !important;
+     text-transform: capitalize !important;
+ }
+ .nav-link:hover {
+     background: transparent !important;
+     color: #031400 !important;
+     font-weight: bold !important;
+ }
+
+ .login-btn {
+     border: 2px solid #178e0c !important;
+     font-size: 10px !important;
+ }
+ .login-btn:hover {
+     background: #20ff01 !important;
+ }
+.navbar {
+    box-shadow: none !important
+}
+
+.navbar-brand {
+    font-size: 25px !important
+}
+
+
+.btn {
+    border-radius: 10px !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+}
+
+.btn-primary {
+    background-color: #20ff01!important
+}
+.btn-secondary {
+    background-color: #20ff01 !important
+}
+.heading {
+    padding: 160px 50px !important;
+    color: #fff !important;
+    background-image: url("https://i.imgur.com/155yNHu.png") !important;
+    background-position: bottom !important;
+    background-size: 159% !important;
+    background-repeat: no-repeat !important;
+
+}
+
+b{
+    color: #8A11C1;
+}
+
+.headingabout {
+    padding: 160px 50px !important;
+    color: #fff !important;
+}
+
+.title {
+    line-height: 90px !important;
+    margin-bottom: -2px !important;
+    font-size: 36px !important
+}
+
+.subtitle {
+    color: rgba(255, 255, 255, 0.685) !important;
+    font-size: 16px !important;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.features {
+    text-align: center !important;
+    background: #43eb22 !important;
+    padding: 60px 50px !important;
+    background-image: url("https://i.imgur.com/zIFEpaD.png") !important;
+    background-position: bottom !important;
+    background-size: 130% !important;
+    background-repeat: no-repeat !important;
+}
+
+.features .title {
+    font-size: 40px !important;
+    color: #ffffff !important;
+    line-height: 70px !important;
+}
+
+.features .subtitle {
+    font-size: 20px !important;
+    color: #FFF;
+}
+
+.features .card-body {
+    text-align: left !important;
+}
+
+.features .card-title {
+    margin: 0 0 -3px !important;
+}
+.cards {
+    margin-top: 30px !important;
+}
+
+.card {
+    border-radius: 5px !important;
+    box-shadow: none !important;
+}
+
+.card-title {
+    font-size: 28px !important;
+    font-weight: 600 !important;
+    color: #FFF !important;
+}
+
+.statistics {
+    text-align: center !important;
+    padding-top: 300px !important;
+}
+
+.statistics .card-body{
+    padding: 0 !important;
+    height: 500 !important;
+    width: 332 !important;
+    max-height: 280 !important;
+    max-width: 332 !important;
+}
+
+.statistics .title {
+    font-size: 40px !important;
+    color: #178e0c !important;
+    line-height: 70px !important;
+}
+
+.statistics .subtitle {
+    font-size: 20px !important;
+    color: #FFF;
+}
+
+.card.statistic {
+    background: transparent !important;
+    box-shadow: none !important;
+    color: #f7f7f7 !important;
+}
+
+
+.page_end {
+    background-image: url("https://cdn.glitch.com/c3ee671d-cdf0-4557-9dec-105b7bfdf09e%2Fwavy-light-by-madness.svg?v=1616442912189") !important;
+    background-position: bottom !important;
+    background-size: 150% !important;
+    background-repeat: no-repeat !important;
+}
+.start {
+    padding: 60px 50px !important
+}
+
+.start .card {
+    background: transparent !important;
+    color: #f6f9ff !important;
+}
+
+.features .card {
+    background: #1D1E28;
+    border-radius: 22px !important;
+    border: 4px solid #FFF;
+}
+.features .card-text {
+color: rgba(255, 255, 255, 0.46) !important
+}
+
+.features .card-body {
+    padding: 40px 40px 40px 30px !important;
+}
+
+
+.footer {
+    text-align: center !important;
+    padding: 5px 6px !important;
+    color: #ecf2ff;
+    padding: 30px 30px !important
+}
+
+.footer .madness {
+    font-family: 'Montserrat' !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    line-height: 5px !important;
+    letter-spacing: 0.15em !important;
+    font-variant: small-caps !important;
+}
+
+.footer .madness a {
+    color: #43eb22 !important;
+    text-decoration: none !important;
+}
+
+.footer .bot-footer {
+    text-align: center !important;
+    color: #a2a8bd !important
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #13141d;
+}
+ ::-webkit-scrollbar-thumb{
+	 background-color: #bbb;
+	 border-radius:20px;
+ }
+
+  ::-webkit-scrollbar-thumb:hover{
+	 background-color: #ccc;
+ }
+  /* Hide scrollbar for IE, Edge add Firefox */
+.scrollbar-hidden {
+    -ms-overflow-style: none;
+    scrollbar-width: none; /* Firefox */
+}
+
+.bgn {
+    background-color: black;
+    border: 1px solid #fff;
+}
+.htext {
+color: #ffffff;
+font-weight: inherit;
+line-height: 1.2;
+}
+
+.Hbot:hover {
+    font-size: 30px;
+    text-shadow: #ffffff;
+}
+.textt {
+    color: #ffffff;
+}
+
+
+.ttjoin {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 51px;
+}
+span {
+    font-weight: 700;
+}
+.footer-social-icons {
+    width: 350px;
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+}
+.social-icon {
+    color: #fff;
+}
+ul.social-icons {
+    margin-top: 10px;
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+.fa-facebook {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+.nav-link {
+     font-size: 18px !important;
+     background: transparent !important;
+     font-family: Lato, sans-serif !important;
+     text-transform: capitalize !important;
+ }
+ .nav-link:hover {
+     background: transparent !important;
+     color: #031400 !important;
+     font-weight: bold !important;
+ }
+
+ .login-btn {
+     border: 2px solid #178e0c !important;
+     font-size: 10px !important;
+ }
+ .login-btn:hover {
+     background: #20ff01 !important;
+ }
+.navbar {
+    box-shadow: none !important
+}
+
+.navbar-brand {
+    font-size: 25px !important
+}
+
+
+
+.btn {
+    border-radius: 10px !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+}
+
+.btn-primary {
+    background-color: #20ff01!important
+}
+.btn-secondary {
+    background-color: #20ff01 !important
+}
+.fa-twitter {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+.fa-github {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-github:hover {
+    background-color: #5a32a3;
+}
+.add_to_discord {
+    display: flex;
+    align-items: center;
+    background-color: blueviolet;
+    border-radius: 8px;
+    border: 0;
+    font-weight: 600;
+    font-size: 17px !important;
+    line-height: 21px !important;
+    color: #fff;
+    padding: 27px;
+    height: 58px;
+    outline: none;
+}
+.add_to_discord svg {
+    padding-right: 20px;
+    box-sizing: unset;
+}
+.add_to_discord:hover {
+    background-color: rgb(152, 67, 233);
+    text-decoration: none;
+  }
+  
+.commandstitle {
+    color: #ffffff;
+}
+.commandssub {
+    color: gray;
+}
+.searchbox {
+    background-color: #2C2F33;
+    padding: 15px 27px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    border-radius: 50px !important;
+    border: 3px solid #ffffff;
+    border-radius: 8px;
+    width: 40%;
+}
+.border {
+    width: 65%;
+    height: 2px;
+    background: #fff;
+    margin-left: 17.5%;
+}
+.collapsible {
+    background-color: #202225;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 50%;
+    border-radius: 50px !important;
+    border: 3px solid #ffffff;
+    text-align: left;
+    outline: none;
+    font-size: 23px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .collapsible span {
+    font-size: 14px;
+    color: grey;
+}
+.collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  .content {
+    padding: 0 18px;
+    width: 50%;
+    margin-left: 25%;
+    overflow: hidden;
+    border-radius: 10px !important;
+
+    transition: max-height 0.3s ease-out;
+    background-color: #222222;
+    color: #6a707a;
+    text-align: left;
+    display: none;
+  }
+  .content h4 {
+    margin-top: 12px;
+    font-size: 20px;
+    font-family: 'Cairo';
+  }
+
+
+  
+
+
+  .licetitle {
+    color: #ffff;
+    margin: 5px;
+    font-family: monospace;
+  }
+
+  .textlice {
+    box-sizing: border-box;
+    color:  #ffff;
+    margin: 3px;
+    letter-spacing: 1px;
+  }
+
+.mastfoot.mb-auto{
+    padding-bottom: 40px;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background-color: #212529;
+    color: white;
+}
+
+.page_end {
+    background-image: url("https://cdn.glitch.com/c3ee671d-cdf0-4557-9dec-105b7bfdf09e%2Fwavy-light-by-madness.svg?v=1616442912189") !important;
+    background-position: bottom !important;
+    background-size: 150% !important;
+    background-repeat: no-repeat !important;
+}
+::-webkit-scrollbar {
+	width: 12.2px;
+}
+
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 1000px #38383b; 
+}
+
+::-webkit-scrollbar-thumb {
+	background: #202225; 
+	border-radius: 4px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(84, 81, 81); 
+  }
+
+.nav-link {
+     font-size: 18px !important;
+     background: transparent !important;
+     font-family: Lato, sans-serif !important;
+     text-transform: capitalize !important;
+ }
+ .nav-link:hover {
+     background: transparent !important;
+     color: #031400 !important;
+     font-weight: bold !important;
+ }
+
+ .login-btn {
+     border: 2px solid #178e0c !important;
+     font-size: 10px !important;
+ }
+ .login-btn:hover {
+     background: #20ff01 !important;
+ }
+.navbar {
+    box-shadow: none !important
+}
+
+.navbar-brand {
+    font-size: 25px !important
+}
+
+
+.btn {
+    border-radius: 10px !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+}
+
+.btn-primary {
+    background-color: #20ff01!important
+}
+.btn-secondary {
+    background-color: #20ff01 !important
+}
+.heading {
+    padding: 160px 50px !important;
+    color: #fff !important;
+    background-image: url("https://i.imgur.com/155yNHu.png") !important;
+    background-position: bottom !important;
+    background-size: 159% !important;
+    background-repeat: no-repeat !important;
+
+}
+
+b{
+    color: #8A11C1;
+}
+
+.headingabout {
+    padding: 160px 50px !important;
+    color: #fff !important;
+}
+
+.title {
+    line-height: 90px !important;
+    margin-bottom: -2px !important;
+    font-size: 36px !important
+}
+
+.subtitle {
+    color: rgba(255, 255, 255, 0.685) !important;
+    font-size: 16px !important;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.features {
+    text-align: center !important;
+    background: #43eb22 !important;
+    padding: 60px 50px !important;
+    background-image: url("https://i.imgur.com/zIFEpaD.png") !important;
+    background-position: bottom !important;
+    background-size: 130% !important;
+    background-repeat: no-repeat !important;
+}
+
+.features .title {
+    font-size: 40px !important;
+    color: #ffffff !important;
+    line-height: 70px !important;
+}
+
+.features .subtitle {
+    font-size: 20px !important;
+    color: #FFF;
+}
+
+.features .card-body {
+    text-align: left !important;
+}
+
+.features .card-title {
+    margin: 0 0 -3px !important;
+}
+.cards {
+    margin-top: 30px !important;
+}
+
+.card {
+    border-radius: 5px !important;
+    box-shadow: none !important;
+}
+
+.card-title {
+    font-size: 28px !important;
+    font-weight: 600 !important;
+    color: #FFF !important;
+}
+
+.statistics {
+    text-align: center !important;
+    padding-top: 300px !important;
+}
+
+.statistics .card-body{
+    padding: 0 !important;
+    height: 500 !important;
+    width: 332 !important;
+    max-height: 280 !important;
+    max-width: 332 !important;
+}
+
+.statistics .title {
+    font-size: 40px !important;
+    color: #178e0c !important;
+    line-height: 70px !important;
+}
+
+.statistics .subtitle {
+    font-size: 20px !important;
+    color: #FFF;
+}
+
+.card.statistic {
+    background: transparent !important;
+    box-shadow: none !important;
+    color: #f7f7f7 !important;
+}
+
+
+.page_end {
+    background-image: url("https://cdn.glitch.com/c3ee671d-cdf0-4557-9dec-105b7bfdf09e%2Fwavy-light-by-madness.svg?v=1616442912189") !important;
+    background-position: bottom !important;
+    background-size: 150% !important;
+    background-repeat: no-repeat !important;
+}
+.start {
+    padding: 60px 50px !important
+}
+
+.start .card {
+    background: transparent !important;
+    color: #f6f9ff !important;
+}
+
+.features .card {
+    background: #1D1E28;
+    border-radius: 22px !important;
+    border: 4px solid #FFF;
+}
+.features .card-text {
+color: rgba(255, 255, 255, 0.46) !important
+}
+
+.features .card-body {
+    padding: 40px 40px 40px 30px !important;
+}
+
+.footer {
+    text-align: center !important;
+    padding: 5px 6px !important;
+    color: #ecf2ff;
+    padding: 30px 30px !important
+}
+
+.footer .madness {
+    font-family: 'Montserrat' !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    line-height: 5px !important;
+    letter-spacing: 0.15em !important;
+    font-variant: small-caps !important;
+}
+
+.footer .madness a {
+    color: #43eb22 !important;
+    text-decoration: none !important;
+}
+
+.footer .bot-footer {
+    text-align: center !important;
+    color: #a2a8bd !important
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #13141d;
+}
+ ::-webkit-scrollbar-thumb{
+	 background-color: #bbb;
+	 border-radius:20px;
+ }
+
+  ::-webkit-scrollbar-thumb:hover{
+	 background-color: #ccc;
+ }
+  /* Hide scrollbar for IE, Edge add Firefox */
+.scrollbar-hidden {
+    -ms-overflow-style: none;
+    scrollbar-width: none; /* Firefox */
+}
+
+body {
+  font-family: 'Poppins', sans-serif !important;
+  background-color: #2C2F33;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  border-top: 6px #43eb22 solid !important;
+  font-size: 16px;
+}
+
+.nav-link {
+   font-size: 18px !important;
+   background: transparent !important;
+   font-family: Lato, sans-serif !important;
+   text-transform: capitalize !important;
+}
+.nav-link:hover {
+   background: transparent !important;
+   color: #031400 !important;
+   font-weight: bold !important;
+}
+
+.login-btn {
+   border: 2px solid #178e0c !important;
+   font-size: 10px !important;
+}
+.login-btn:hover {
+   background: #20ff01 !important;
+}
+.navbar {
+  box-shadow: none !important
+}
+
+.navbar-brand {
+  font-size: 25px !important
+}
+
+.btn {
+  border-radius: 10px !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+}
+
+.btn-primary {
+  background-color: #20ff01!important
+}
+.btn-secondary {
+  background-color: #20ff01 !important
+}
+.heading {
+  padding: 160px 50px !important;
+  color: #fff !important;
+  background-image: url("https://i.imgur.com/155yNHu.png") !important;
+  background-position: bottom !important;
+  background-size: 159% !important;
+  background-repeat: no-repeat !important;
+
+}
+
+b{
+  color: #8A11C1;
+}
+
+.headingabout {
+  padding: 160px 50px !important;
+  color: #fff !important;
+}
+
+.title {
+  line-height: 90px !important;
+  margin-bottom: -2px !important;
+  font-size: 36px !important
+}
+
+.subtitle {
+  color: rgba(255, 255, 255, 0.685) !important;
+  font-size: 16px !important;
+  font-family: 'Lato', sans-serif;
+}
+
+
+.features {
+  text-align: center !important;
+  background: #43eb22 !important;
+  padding: 60px 50px !important;
+  background-image: url("https://i.imgur.com/zIFEpaD.png") !important;
+  background-position: bottom !important;
+  background-size: 130% !important;
+  background-repeat: no-repeat !important;
+}
+
+.features .title {
+  font-size: 40px !important;
+  color: #ffffff !important;
+  line-height: 70px !important;
+}
+
+.features .subtitle {
+  font-size: 20px !important;
+  color: #FFF;
+}
+
+.features .card-body {
+  text-align: left !important;
+}
+
+.features .card-title {
+  margin: 0 0 -3px !important;
+}
+.cards {
+  margin-top: 30px !important;
+}
+
+.card {
+  border-radius: 5px !important;
+  box-shadow: none !important;
+}
+
+.card-title {
+  font-size: 28px !important;
+  font-weight: 600 !important;
+  color: #FFF !important;
+}
+
+.statistics {
+  text-align: center !important;
+  padding-top: 300px !important;
+}
+
+.statistics .card-body{
+  padding: 0 !important;
+  height: 500 !important;
+  width: 332 !important;
+  max-height: 280 !important;
+  max-width: 332 !important;
+}
+
+.statistics .title {
+  font-size: 40px !important;
+  color: #178e0c !important;
+  line-height: 70px !important;
+}
+
+.statistics .subtitle {
+  font-size: 20px !important;
+  color: #FFF;
+}
+
+.card.statistic {
+  background: transparent !important;
+  box-shadow: none !important;
+  color: #f7f7f7 !important;
+}
+
+
+.page_end {
+  background-image: url("https://cdn.glitch.com/c3ee671d-cdf0-4557-9dec-105b7bfdf09e%2Fwavy-light-by-madness.svg?v=1616442912189") !important;
+  background-position: bottom !important;
+  background-size: 150% !important;
+  background-repeat: no-repeat !important;
+}
+.start {
+  padding: 60px 50px !important
+}
+
+.start .card {
+  background: transparent !important;
+  color: #f6f9ff !important;
+}
+
+.features .card {
+  background: #1D1E28;
+  border-radius: 22px !important;
+  border: 4px solid #FFF;
+}
+.features .card-text {
+color: rgba(255, 255, 255, 0.46) !important
+}
+
+.features .card-body {
+  padding: 40px 40px 40px 30px !important;
+}
+
+
+.footer {
+  text-align: center !important;
+  padding: 5px 6px !important;
+  color: #ecf2ff;
+  padding: 30px 30px !important
+}
+
+.footer .madness {
+  font-family: 'Montserrat' !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 5px !important;
+  letter-spacing: 0.15em !important;
+  font-variant: small-caps !important;
+}
+
+.footer .madness a {
+  color: #43eb22 !important;
+  text-decoration: none !important;
+}
+
+.footer .bot-footer {
+  text-align: center !important;
+  color: #a2a8bd !important
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  width:8px;
+}
+
+::-webkit-scrollbar-track{
+  background-color: #13141d;
+}
+::-webkit-scrollbar-thumb{
+ background-color: #bbb;
+ border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+ background-color: #ccc;
+}
+/* Hide scrollbar for IE, Edge add Firefox */
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox */
+}
+
+.bgn {
+  background-color: black;
+  border: 1px solid #fff;
+}
+.htext {
+color: #ffffff;
+font-weight: inherit;
+line-height: 1.2;
+}
+
+.Hbot:hover {
+  font-size: 30px;
+  text-shadow: #ffffff;
+}
+.textt {
+  color: #ffffff;
+}
+
+
+.ttjoin {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 51px;
+}
+span {
+  font-weight: 700;
+}
+.footer-social-icons {
+  width: 350px;
+  display: block;
+  margin: 0 auto;
+  align-items: center;
+}
+.social-icon {
+  color: #fff;
+}
+ul.social-icons {
+  margin-top: 10px;
+}
+.social-icons li {
+  vertical-align: top;
+  display: inline;
+  height: 100px;
+}
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+}
+.fa-facebook {
+  padding:10px 14px;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition: .5s;
+  background-color: #322f30;
+}
+.fa-facebook:hover {
+  background-color: #3d5b99;
+}
+.nav-link {
+   font-size: 18px !important;
+   background: transparent !important;
+   font-family: Lato, sans-serif !important;
+   text-transform: capitalize !important;
+}
+.nav-link:hover {
+   background: transparent !important;
+   color: #031400 !important;
+   font-weight: bold !important;
+}
+
+.login-btn {
+   border: 2px solid #178e0c !important;
+   font-size: 10px !important;
+}
+.login-btn:hover {
+   background: #20ff01 !important;
+}
+.navbar {
+  box-shadow: none !important
+}
+
+.navbar-brand {
+  font-size: 25px !important
+}
+
+
+
+.btn {
+  border-radius: 10px !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+}
+
+.btn-primary {
+  background-color: #20ff01!important
+}
+.btn-secondary {
+  background-color: #20ff01 !important
+}
+.fa-twitter {
+  padding:10px 12px;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition: .5s;
+  background-color: #322f30;
+}
+.fa-twitter:hover {
+  background-color: #00aced;
+}
+.fa-github {
+  padding:10px 14px;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition: .5s;
+  background-color: #322f30;
+}
+.fa-github:hover {
+  background-color: #5a32a3;
+}
+.add_to_discord {
+  display: flex;
+  align-items: center;
+  background-color: blueviolet;
+  border-radius: 8px;
+  border: 0;
+  font-weight: 600;
+  font-size: 17px !important;
+  line-height: 21px !important;
+  color: #fff;
+  padding: 27px;
+  height: 58px;
+  outline: none;
+}
+.add_to_discord svg {
+  padding-right: 20px;
+  box-sizing: unset;
+}
+.add_to_discord:hover {
+  background-color: rgb(152, 67, 233);
+  text-decoration: none;
+}
+
+.commandstitle {
+  color: #ffffff;
+}
+.commandssub {
+  color: gray;
+}
+.searchbox {
+  background-color: #2b2a38;
+  padding: 15px 27px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  border: 3px solid #3bfd00;
+  border-radius: 8px;
+  width: 40%;
+}
+.border {
+  width: 65%;
+  height: 2px;
+  background: #fff;
+  margin-left: 17.5%;
+}
+.collapsible {
+  background-color: #202225;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 50%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 23px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.collapsible span {
+  font-size: 14px;
+  color: grey;
+}
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+.content {
+  padding: 0 18px;
+  width: 50%;
+  margin-left: 25%;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background-color: #2f3136;
+  color: #6a707a;
+  text-align: left;
+  display: none;
+}
+.content h4 {
+  margin-top: 12px;
+  font-size: 20px;
+  font-family: 'Cairo';
+}
+
+
+
+
+
+.licetitle {
+  color: #ffff;
+  margin: 5px;
+  font-family: monospace;
+}
+
+.textlice {
+  box-sizing: border-box;
+  color:  #ffff;
+  margin: 3px;
+  letter-spacing: 1px;
+}
+
+.mastfoot.mb-auto{
+  padding-bottom: 40px;
+  padding: 20px;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  background-color: #212529;
+  color: white;
+}
+
+
+::-webkit-scrollbar {
+width: 12.2px;
+}
+
+::-webkit-scrollbar-track {
+box-shadow: inset 0 0 1000px #38383b; 
+}
+
+::-webkit-scrollbar-thumb {
+background: #202225; 
+border-radius: 4px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(84, 81, 81); 
+}
+body {
+    font-family: 'Poppins', sans-serif !important;
+    background-color: #2C2F33;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    border-top: 6px #43eb22 solid !important;
+    font-size: 16px;
+  }
+  
+  .nav-link {
+     font-size: 18px !important;
+     background: transparent !important;
+     font-family: Lato, sans-serif !important;
+     text-transform: capitalize !important;
+  }
+  .nav-link:hover {
+     background: transparent !important;
+     color: #031400 !important;
+     font-weight: bold !important;
+  }
+  
+  .login-btn {
+     border: 2px solid #178e0c !important;
+     font-size: 10px !important;
+  }
+  .login-btn:hover {
+     background: #20ff01 !important;
+  }
+  .navbar {
+    box-shadow: none !important
+  }
+  
+  .navbar-brand {
+    font-size: 25px !important
+  }
+  
+ 
+  
+  .btn {
+    border-radius: 10px !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+  }
+  
+  .btn-primary {
+    background-color: #20ff01!important
+  }
+  .btn-secondary {
+    background-color: #20ff01 !important
+  }
+  .heading {
+    padding: 160px 50px !important;
+    color: #fff !important;
+    background-image: url("https://i.imgur.com/155yNHu.png") !important;
+    background-position: bottom !important;
+    background-size: 159% !important;
+    background-repeat: no-repeat !important;
+  
+  }
+  
+  b{
+    color: #8A11C1;
+  }
+  
+  .headingabout {
+    padding: 160px 50px !important;
+    color: #fff !important;
+  }
+  
+  .title {
+    line-height: 90px !important;
+    margin-bottom: -2px !important;
+    font-size: 36px !important
+  }
+  
+  .subtitle {
+    color: rgba(255, 255, 255, 0.685) !important;
+    font-size: 16px !important;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  
+  .features {
+    text-align: center !important;
+    background: #43eb22 !important;
+    padding: 60px 50px !important;
+    background-image: url("https://i.imgur.com/zIFEpaD.png") !important;
+    background-position: bottom !important;
+    background-size: 130% !important;
+    background-repeat: no-repeat !important;
+  }
+  
+  .features .title {
+    font-size: 40px !important;
+    color: #ffffff !important;
+    line-height: 70px !important;
+  }
+  
+  .features .subtitle {
+    font-size: 20px !important;
+    color: #FFF;
+  }
+  
+  .features .card-body {
+    text-align: left !important;
+  }
+  
+  .features .card-title {
+    margin: 0 0 -3px !important;
+  }
+  .cards {
+    margin-top: 30px !important;
+  }
+  
+  .card {
+    border-radius: 5px !important;
+    box-shadow: none !important;
+  }
+  
+  .card-title {
+    font-size: 28px !important;
+    font-weight: 600 !important;
+    color: #FFF !important;
+  }
+  
+  .statistics {
+    text-align: center !important;
+    padding-top: 300px !important;
+  }
+  
+  .statistics .card-body{
+    padding: 0 !important;
+    height: 500 !important;
+    width: 332 !important;
+    max-height: 280 !important;
+    max-width: 332 !important;
+  }
+  
+  .statistics .title {
+    font-size: 40px !important;
+    color: #178e0c !important;
+    line-height: 70px !important;
+  }
+  
+  .statistics .subtitle {
+    font-size: 20px !important;
+    color: #FFF;
+  }
+  
+  .card.statistic {
+    background: transparent !important;
+    box-shadow: none !important;
+    color: #f7f7f7 !important;
+  }
+  
+  
+  .page_end {
+    background-image: url("https://cdn.glitch.com/c3ee671d-cdf0-4557-9dec-105b7bfdf09e%2Fwavy-light-by-madness.svg?v=1616442912189") !important;
+    background-position: bottom !important;
+    background-size: 150% !important;
+    background-repeat: no-repeat !important;
+  }
+  .start {
+    padding: 60px 50px !important
+  }
+  
+  .start .card {
+    background: transparent !important;
+    color: #f6f9ff !important;
+  }
+  
+  .features .card {
+    background: #1D1E28;
+    border-radius: 22px !important;
+    border: 4px solid #FFF;
+  }
+  .features .card-text {
+  color: rgba(255, 255, 255, 0.46) !important
+  }
+  
+  .features .card-body {
+    padding: 40px 40px 40px 30px !important;
+  }
+  
+ 
+  .footer {
+    text-align: center !important;
+    padding: 5px 6px !important;
+    color: #ecf2ff;
+    padding: 30px 30px !important
+  }
+  
+  .footer .madness {
+    font-family: 'Montserrat' !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    line-height: 5px !important;
+    letter-spacing: 0.15em !important;
+    font-variant: small-caps !important;
+  }
+  
+  .footer .madness a {
+    color: #43eb22 !important;
+    text-decoration: none !important;
+  }
+  
+  .footer .bot-footer {
+    text-align: center !important;
+    color: #a2a8bd !important
+  }
+  
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  ::-webkit-scrollbar {
+    width:8px;
+  }
+  
+  ::-webkit-scrollbar-track{
+    background-color: #13141d;
+  }
+  ::-webkit-scrollbar-thumb{
+   background-color: #bbb;
+   border-radius:20px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover{
+   background-color: #ccc;
+  }
+  /* Hide scrollbar for IE, Edge add Firefox */
+  .scrollbar-hidden {
+    -ms-overflow-style: none;
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  .bgn {
+    background-color: black;
+    border: 1px solid #fff;
+  }
+  .htext {
+  color: #ffffff;
+  font-weight: inherit;
+  line-height: 1.2;
+  }
+  
+  .Hbot:hover {
+    font-size: 30px;
+    text-shadow: #ffffff;
+  }
+  .textt {
+    color: #ffffff;
+  }
+  
+  
+  .ttjoin {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 51px;
+  }
+  span {
+    font-weight: 700;
+  }
+  .footer-social-icons {
+    width: 350px;
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+  }
+  .social-icon {
+    color: #fff;
+  }
+  ul.social-icons {
+    margin-top: 10px;
+  }
+  .social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+  }
+  .social-icons a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .fa-facebook {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+  }
+  .fa-facebook:hover {
+    background-color: #3d5b99;
+  }
+  .nav-link {
+     font-size: 18px !important;
+     background: transparent !important;
+     font-family: Lato, sans-serif !important;
+     text-transform: capitalize !important;
+  }
+  .nav-link:hover {
+     background: transparent !important;
+     color: #031400 !important;
+     font-weight: bold !important;
+  }
+  
+  .login-btn {
+     border: 2px solid #178e0c !important;
+     font-size: 10px !important;
+  }
+  .login-btn:hover {
+     background: #20ff01 !important;
+  }
+  .navbar {
+    box-shadow: none !important
+  }
+  
+  .navbar-brand {
+    font-size: 25px !important
+  }
+  
+ 
+  
+  .btn {
+    border-radius: 10px !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+  }
+  
+  .btn-primary {
+    background-color: #20ff01!important
+  }
+  .btn-secondary {
+    background-color: #20ff01 !important
+  }
+  .fa-twitter {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+  }
+  .fa-twitter:hover {
+    background-color: #00aced;
+  }
+  .fa-github {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+  }
+  .fa-github:hover {
+    background-color: #5a32a3;
+  }
+  .add_to_discord {
+    display: flex;
+    align-items: center;
+    background-color: blueviolet;
+    border-radius: 8px;
+    border: 0;
+    font-weight: 600;
+    font-size: 17px !important;
+    line-height: 21px !important;
+    color: #fff;
+    padding: 27px;
+    height: 58px;
+    outline: none;
+  }
+  .add_to_discord svg {
+    padding-right: 20px;
+    box-sizing: unset;
+  }
+  .add_to_discord:hover {
+    background-color: rgb(152, 67, 233);
+    text-decoration: none;
+  }
+  
+  .commandstitle {
+    color: #ffffff;
+  }
+  .commandssub {
+    color: gray;
+  }
+  .searchbox {
+    background-color: #2b2a38;
+    padding: 15px 27px;
+    font-size: 20px;
+    color: #ccc;
+    border: 3px solid #2b2a38;
+    border-radius: 8px;
+    width: 40%;
+  }
+  .border {
+    width: 65%;
+    height: 2px;
+    background: #fff;
+    margin-left: 17.5%;
+  }
+  .collapsible {
+    background-color: #202225;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 50%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 23px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .collapsible span {
+    font-size: 14px;
+    color: grey;
+  }
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  .content {
+    padding: 0 18px;
+    width: 50%;
+    margin-left: 25%;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: #2f3136;
+    color: #6a707a;
+    text-align: left;
+    display: none;
+  }
+  .content h4 {
+    margin-top: 12px;
+    font-size: 20px;
+    font-family: 'Cairo';
+  }
+  
+  
+  
+  
+  
+  .licetitle {
+    color: #ffff;
+    margin: 5px;
+    font-family: monospace;
+  }
+  
+  .textlice {
+    box-sizing: border-box;
+    color:  #ffff;
+    margin: 3px;
+    letter-spacing: 1px;
+  }
+  
+  .mastfoot.mb-auto{
+    padding-bottom: 40px;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background-color: #212529;
+    color: white;
+  }
+  
+  
+  ::-webkit-scrollbar {
+  width: 12.2px;
+  }
+  
+  ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 1000px #38383b; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+  background: #202225; 
+  border-radius: 4px;
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(84, 81, 81); 
+  }
+  
